@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <fieldset>
+            <legend>Application form</legend>
+
+            <h1>Registeration form</h1>
+            <form action="./out.txt">
+                <div id="_Firstname">
+                    <label for="_Firstname">Firstname:</label>
+                    <input type="text" id="_Firstname" required pattern="[A-Za-z]{3,25}"
+                        title="you should enter atleast 3 charcters. " />
+                </div><br><br>
+                <div id="_Lastname">
+                    <label for="_Lastname">Lastname:</label>
+                    <input type="text" id="_Lastname" pattern="[A-Za-z]{3,25}"
+                        title="you should enter atleast 3 charcters. " />
+                </div><br><br>
+                <div id="_email">
+                    <label for="_email">email:</label>
+                    <input type="email" id="_email" required pattern="[A-Za-z0-9]{3,25}+@[a-z]{5,}+.[a-z]{2,}" />
+                </div><br><br>
+                <div id="_password">
+                    <label for="_password">Password:</label>
+                    <input type="text" id="_password" required
+                        pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[@])(?=.*[0-9])[A-Za-z@0-9]{8,}"
+                        title="there shpuld one lower,uppercase,specail and num with minimum of 8 characters." />
+                </div><br><br>
+                <div>
+                    <span>male:</span>
+                    <input type="radio" name="gender"><br><br>
+                    <span>female:</span>
+                    <input type="radio" name="gender"><br><br>
+                </div>
+                <span>Education:</span>
+                from:<input type="date" name="" id="">
+                to: <input type="date" name="" id=""><br>
+                <br>
+                <button>Register</button>
+            </form>
+        </fieldset>
+    </center>
+</body>
+</html>
